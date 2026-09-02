@@ -294,6 +294,9 @@ PERF_ANIM_OVERRIDE ?= false
 PRODUCT_PRODUCT_PROPERTIES += \
   persist.sys.activity_anim_perf_override=$(PERF_ANIM_OVERRIDE)
 
+# Inherit Scalar Additions
+include vendor/lineage/config/scalar.mk
+
 include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
