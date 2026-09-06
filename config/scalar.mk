@@ -33,3 +33,10 @@ PRODUCT_PRODUCT_PROPERTIES += is_expressive_design_enabled=true
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
+
+# SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI \
+    
