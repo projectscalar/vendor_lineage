@@ -39,4 +39,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
     SystemUI \
-    
+
+# Allow disabling PIHooks
+ifeq ($(TARGET_DISABLE_PIHOOKS),true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.pihooks.disable.gms_props=true \
+    persist.sys.pihooks.disable.gms_key_attestation_block=true
+endif
